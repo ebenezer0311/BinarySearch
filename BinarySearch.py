@@ -219,6 +219,52 @@ class Solution:
                 else:
                     end=mid-1
         return -1
+
+# search in a sorted rotated array(duplicates)
+class Solution:
+    def search(self, nums: [int], target: int) -> bool:
+        n=len(nums)
+        start=0
+        end=n-1
+        
+        while start<=end:
+            mid=(start+end)//2
+            if nums[mid]==target:
+                return True
+
+            if nums[start]==nums[mid]==nums[end]:
+                start+=1
+                end-=1
+                continue
+
+            elif nums[start]<=nums[mid]:
+                if nums[start]<=target<=nums[mid]:
+                    end=mid-1
+                else:
+                    start=mid+1
+
+            else:
+                if nums[mid]<=target<=nums[end]:
+                    start=mid+1
+                else:
+                    end=mid-1
+        return False
+
+#Find Minimum in Rotated Sorted Array
+class Solution:
+    def findMin(self, nums: [int]) -> int:
+        left, right = 0, len(nums) - 1
+    
+        while left < right:
+            middle = left + (right - left) // 2
+        
+            if nums[middle] > nums[right]:
+                left = middle + 1
+            else:
+                right = middle
+    
+        return nums[left]
+
         
 
     
