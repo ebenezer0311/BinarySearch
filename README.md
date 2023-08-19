@@ -1,5 +1,5 @@
 # BinarySearch
 - Will catch up soon!
 
-![image](https://github.com/ebenezer0311/BinarySearch/assets/108586141/b4724dad-8443-4d8d-be66-6a7c38767dd4)
-
+![image](https://github.com/ebenezer0311/BinarySearch/assets/108586141/22ee72cd-562f-4159-a94a-ff7221da47f9)
+![image](https://github.com/ebenezer0311/BinarySearch/assets/108586141/afb06072-4bc0-42c9-99d6-0a831706f984)
